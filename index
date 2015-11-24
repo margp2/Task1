@@ -1,0 +1,31 @@
+<!doctype html>
+<html ng-app="Todo">
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+    <script src="js/main.js"></script>
+  </head>
+  <body ng-app="Todo">
+	  <div ng-controller="TodoCtrl">
+		<h2>Todo</h2>
+		<ul ng-repeat="todo in todos track by $index">
+			<li>
+			    Get the car fixed
+				<button ng-click="done(todo)"> Done </button>
+			</li> <br>
+			<li>
+				Grocery Shopping
+				<button ng-click="done(todo)"> Done </button>
+			</li>
+			
+		</ul>
+	 </div>
+	 
+	 <ul>
+		<li>
+			<input type= "text" placeholder="New Todo" ng-model="newTodo" ng-keyup="add($event") />
+		</li>
+	 </ul>
+	</div>
+	 
+	</body>
+</html>
