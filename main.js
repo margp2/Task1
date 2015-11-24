@@ -1,9 +1,8 @@
 var app= angular.module('Todo', []);
 APP.CONTROLLER('TodoCtr;', function($scope) {
  	 $scope.todos = [
-    'Learn Sketch', 
-    'Look at Dribbble and feel inferior',
-    'Actually learn how to use the Pen tool'
+    'Get the car fixed', 
+    'Grocery Shopping',
 	];
 	
 	$scope.done = function(todo) {
